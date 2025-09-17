@@ -43,7 +43,7 @@ object Build : BuildType({
         maven {
             id = "Maven2"
             goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true"
+            runnerArgs = "-Dmaven.test.failure.ignore=true -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8"
         }
     }
 
